@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import {
-    getAllImports,
+    getImportCount,
     version
 } from '../../index.js';
 
@@ -12,9 +12,9 @@ const appPath = path.join(__dirname, 'app.js');
 try {
     const fileContent = fs.readFileSync(appPath, 'utf8');
 
-    console.log("=== getAllImports Test ===");
+    console.log("=== getImportCount Test ===");
     console.log("Exposed Version: ", version);
-    console.log(getAllImports(fileContent));
+    console.log("Import count:    ", getImportCount(fileContent));
 } catch (error) {
     console.error("Error running test:", error.message);
 }
