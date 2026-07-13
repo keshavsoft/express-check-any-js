@@ -1,7 +1,7 @@
 /**
  * Calculates the start line of a specific import statement.
  */
-export function getImportStartLine(fileContent, importSource) {
+export const getImportStartLine = (fileContent, importSource) => {
     const importRegex = /import\s+[\s\S]*?\s+from\s+['"][^'"]+['"]|import\s+['"][^'"]+['"]/g;
     let match;
     while ((match = importRegex.exec(fileContent)) !== null) {
@@ -14,4 +14,4 @@ export function getImportStartLine(fileContent, importSource) {
         }
     }
     return -1;
-}
+};

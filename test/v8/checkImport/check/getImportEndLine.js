@@ -1,7 +1,7 @@
 /**
  * Calculates the end line of a specific import statement.
  */
-export function getImportEndLine(fileContent, importSource) {
+export const getImportEndLine = (fileContent, importSource) => {
     const importRegex = /import\s+[\s\S]*?\s+from\s+['"][^'"]+['"]|import\s+['"][^'"]+['"]/g;
     let match;
     while ((match = importRegex.exec(fileContent)) !== null) {
@@ -15,4 +15,4 @@ export function getImportEndLine(fileContent, importSource) {
         }
     }
     return -1;
-}
+};

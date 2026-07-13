@@ -7,7 +7,7 @@ import {
 } from './check/index.js';
 import { scenarios } from './scenarios.js';
 
-console.log("Running direct v7 import verification tests:\n");
+console.log("Running direct v8 import verification tests:\n");
 
 let allPassed = true;
 
@@ -58,8 +58,8 @@ scenarios.forEach((scenario, index) => {
 });
 
 if (allPassed) {
-    console.log("ALL V7 CORE FUNCTION TESTS PASSED! 🎉");
+    console.log("ALL V8 CORE FUNCTION TESTS PASSED! 🎉");
 } else {
-    console.error("SOME V7 TESTS FAILED! ❌");
+    console.error("SOME V8 TESTS FAILED! ❌");
     process.exit(1);
 }

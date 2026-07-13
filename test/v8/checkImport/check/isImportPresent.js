@@ -1,7 +1,7 @@
 /**
  * Tests whether a specific import source path is present or not.
  */
-export function isImportPresent(fileContent, neededImport) {
+export const isImportPresent = (fileContent, neededImport) => {
     const importRegex = /import\s+[\s\S]*?\s+from\s+['"][^'"]+['"]|import\s+['"][^'"]+['"]/g;
     let match;
     while ((match = importRegex.exec(fileContent)) !== null) {
@@ -13,4 +13,4 @@ export function isImportPresent(fileContent, neededImport) {
         }
     }
     return false;
-}
+};

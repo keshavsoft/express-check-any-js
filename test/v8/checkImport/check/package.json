@@ -1,0 +1,19 @@
+{
+  "name": "express-check-imports",
+  "version": "1.0.0",
+  "description": "Pure ES6 utility functions to parse, count, test, and locate JavaScript ESM imports programmatically.",
+  "type": "module",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node ../test.js"
+  },
+  "keywords": [
+    "esm",
+    "imports",
+    "parser",
+    "express",
+    "route-checker"
+  ],
+  "author": "KeshavSoft",
+  "license": "MIT"
+}
