@@ -1,0 +1,18 @@
+{
+    "importLines": {
+        "toInsertLine": "import funcFromShowAll from './ShowAll/controller.js';",
+        "duplicationCheck": "from './ShowAll/controller.js'",
+        "insertAfter": [
+            "import funcFrom",
+            "import express"
+        ]
+    },
+    "useLines": {
+        "toInsertLine": "router.get('ShowAll', (req, res) => funcFromShowAll({ res, inTablePath: tablePath }));",
+        "duplicationCheck": "router.use('/ShowAll'",
+        "insertAfter": [
+            "router.",
+            "const router = "
+        ]
+    }
+}

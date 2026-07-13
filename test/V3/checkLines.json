@@ -1,0 +1,19 @@
+{
+    "importLines": {
+        "toInsertLine": "import { router as routerFrom<startEndPoint> } from './<startEndPoint>/routes.js';",
+        "duplicationCheck": "from './<startEndPoint>/routes.js';",
+        "insertAfter": [
+            "import routerFrom",
+            "import { router as routerFrom",
+            "import express"
+        ]
+    },
+    "useLines": {
+        "toInsertLine": "app.use('/<startEndPoint>', routerFrom<startEndPoint>);",
+        "duplicationCheck": "app.use('/<startEndPoint>'",
+        "insertAfter": [
+            "app.",
+            "const app = "
+        ]
+    }
+}
