@@ -6,7 +6,8 @@ import {
     getImportCount,
     isImportPresent,
     getImportStartLine,
-    getImportEndLine
+    getImportEndLine,
+    version
 } from '../../index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -16,6 +17,7 @@ try {
     const fileContent = fs.readFileSync(appPath, 'utf8');
 
     console.log("=== Verification of v9 imports tests ===");
+    console.log("Exposed Version:                      ", version);
     console.log("All imports:");
     console.log(getAllImports(fileContent));
     console.log();
