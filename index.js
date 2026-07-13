@@ -1,5 +1,9 @@
 import {
-    getAllImports
+    getAllImports,
+    getImportCount,
+    isImportPresent,
+    getImportStartLine,
+    getImportEndLine
 } from "./bin/v3/index.js";
 
 import getLatestVersion from "./bin/core/getLatestVersion.js";
@@ -13,7 +17,11 @@ const load = async ({ jsFilePath, inCheckLines, showLog }) => {
 };
 
 export {
-    getAllImports
+    getAllImports,
+    getImportCount,
+    isImportPresent,
+    getImportStartLine,
+    getImportEndLine
 };
 
 export default load;
